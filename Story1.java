@@ -47,19 +47,19 @@ public class Story1 {
 			
 		}
 		public static String Checker(String str) {
-			 HashMap<String, String> hm = new HashMap<String, String>();
-			 hm.put("as", "[blue]");
-		        hm.put("if", "[blue]");
-		        hm.put("and", "[blue]");
-		        hm.put("then", "[blue]");
-		        hm.put("when", "[blue]");
+			 HashMap<String, String> map = new HashMap<String, String>();
+			 map.put("as", "[blue]");
+		        map.put("if", "[blue]");
+		        map.put("and", "[blue]");
+		        map.put("then", "[blue]");
+		        map.put("when", "[blue]");
 		        
 			String s2[]= {"as","if","and","then","when" };
 			if(str.endsWith(",")||str.endsWith(".")) {
 				str=str.substring(0, str.length()-1);
 				
 			}
-			return hm.get(str.toLowerCase());
+			return map.get(str.toLowerCase());
 			
 			
 		}
